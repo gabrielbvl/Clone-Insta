@@ -1,0 +1,188 @@
+    /*
+Theme Name: Instagram
+Author: Kenzie Academy
+Author URI: kenzie.com.br;
+Version: 1.0
+ 
+--------------------------------------------
+SUGESTÃO DE ESTRUTURAÇÃO BASE 
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** BODY
+**** TOPO
+**** RODAPÉ
+**** PÁGINA INICIAL
+*/
+    /* VARIÁVEIS */
+    
+     :root {}
+    /*BODY*/
+    
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+        color: #262626;
+        max-width: 935px;
+        margin: auto;
+    }
+    
+    .profile-info h2 {
+        font-weight: bold;
+        margin: 60px 0 15px -120px;
+    }
+    
+    .profile-info ul {
+        margin-left: -120px;
+    }
+    /*TOPO*/
+    
+    header {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 10px 0;
+    }
+    /*RODAPÉ*/
+    
+    footer {
+        display: none;
+    }
+    /*PÁGINA INICIAL*/
+    
+    main {}
+    
+    main .profile-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .profile-info h1 {
+        display: none;
+    }
+    
+    .profile-info ul {
+        font-size: 14px;
+    }
+    
+    .profile-data {
+        max-width: 190px;
+        text-align: center;
+        font-size: 13px;
+        margin: 50px 0 0 10px;
+        display: flex;
+    }
+    
+    main .highlighted-stories {}
+    
+    .highlighted-stories ul {
+        display: flex;
+        gap: 20px;
+        margin-left: 10px;
+    }
+    
+    .highlighted-stories figcaption {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    
+    .highlighted-stories img {
+        width: 77px;
+        height: 77px;
+        border: 1px transparent white;
+        border-radius: 100%;
+        object-fit: cover;
+        margin: 40px 0 5px 0;
+    }
+    
+    main .profile-posts {}
+    
+    .profile-posts nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        border-top: 2px solid rgba(128, 128, 128, 0.555);
+        margin-bottom: 30px;
+    }
+    
+    .profile-nav img {
+        width: 15px;
+        padding: 5px;
+    }
+    
+    .profile-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .profile-posts a {
+        margin-top: 5px;
+        text-decoration: none;
+    }
+    
+    .profile-posts #solitary {
+        font-weight: bold;
+        border-top: 2px solid black;
+        margin-top: -2px;
+    }
+    
+    nav a {
+        color: black;
+    }
+    
+    .profile-photo img {
+        width: 120px;
+        border: 1px transparent white;
+        border-radius: 100%;
+        margin-left: 10px;
+    }
+    
+    .profile-posts ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .profile-posts ul img {
+        width: 293px;
+        height: 293px;
+        object-fit: cover;
+    }
+    
+    @media (min-width: 768px) {
+        header {
+            display: flex;
+            justify-content: left;
+            margin-left: 10px;
+        }
+        .instagram-logo img {
+            width: 150px;
+        }
+        .profile-photo img {
+            margin-top: 30px;
+            width: 200px;
+        }
+        .profile-data {
+            position: absolute;
+            max-width: none;
+            font-size: 20px;
+            margin: 195px 0px 0px 60px;
+            gap: 20px;
+        }
+        .profile-data span {
+            font-weight: bold;
+        }
+        .profile-info h2 {
+            font-size: 20px;
+            margin: 50px 0px 15px 60px;
+        }
+        .profile-info ul {
+            font-size: 20px;
+            margin-left: 60px;
+        }
+        .highlighted-stories ul {
+            margin-top: 20px;
+        }
+    }
